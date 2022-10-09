@@ -1,0 +1,17 @@
+.lightColor {
+    color: gray
+  }
+
+.flexColumn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navPadding {
+    padding: 1em
+}
+
+.paddedText {
+    padding: 1em;
+}
