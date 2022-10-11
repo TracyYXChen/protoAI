@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
+import { Model } from './model'
 
 //const element = <FontAwesomeIcon icon="fa-thin fa-microchip-ai" />
 
@@ -19,12 +20,12 @@ const people = <FontAwesomeIcon icon={faUserGroup} size='3x'className={styles.li
 export function SideBar() {
     //return <div>side bars {model} {databse} {phone} {people}</div>
     return (
-        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+        <Tab.Container id="left-tabs-example" defaultActiveKey="model">
         <Row>
         <Col sm={1}>
-            <Nav variant="pills" className={`flex-column ${styles.navPadding}`}>
+            <Nav variant="pills" className={`flex-column ${styles.navPadding}`} activeKey="/model">
             <Nav.Item>
-                <Nav.Link eventKey="model">{model} <p>Model</p> </Nav.Link>
+                <Nav.Link eventKey="model">{model} <p>Model</p>  </Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link eventKey="data">{database} <p>Data</p> </Nav.Link>
@@ -40,7 +41,7 @@ export function SideBar() {
         <Col sm={9}>
             <Tab.Content>
             <Tab.Pane eventKey="model">
-                 Model
+                <Model></Model>
             </Tab.Pane>
             <Tab.Pane eventKey="data">
                  Data
