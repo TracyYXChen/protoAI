@@ -8,7 +8,9 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import { Model } from './model'
+import { Model } from './model';
+import { Data } from './data'
+import { ModelTabs } from './modelTabs'
 
 //const element = <FontAwesomeIcon icon="fa-thin fa-microchip-ai" />
 
@@ -17,7 +19,7 @@ const database = <FontAwesomeIcon icon={faDatabase} size="4x"  className={styles
 const phone = <FontAwesomeIcon icon={faMobileScreen} size="4x" className={styles.lightColor}/>
 const people = <FontAwesomeIcon icon={faUserGroup} size='3x'className={styles.lightColor}/>
 
-export function SideBar() {
+export function SideBar(props) {
     //return <div>side bars {model} {databse} {phone} {people}</div>
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="model">
@@ -44,7 +46,15 @@ export function SideBar() {
                 <Model></Model>
             </Tab.Pane>
             <Tab.Pane eventKey="data">
-                 Data
+                <Row>
+                    <Col xs={8}>
+                    <Data modelRan={props.modelRan}></Data>
+                    </Col>
+                    <Col xs={4}>
+                    <ModelTabs updateRunStatus={props.updateRunStatus} ></ModelTabs>
+                    </Col>
+                </Row>
+                
             </Tab.Pane>
             <Tab.Pane eventKey="ui">
                  UI
