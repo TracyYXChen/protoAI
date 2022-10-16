@@ -12,6 +12,7 @@ import { Model } from './model';
 import { Data } from './data'
 import { ModelTabs } from './modelTabs';
 import { UI } from './ui'
+import { DataPreview } from './dataPreview'
 
 //const element = <FontAwesomeIcon icon="fa-thin fa-microchip-ai" />
 
@@ -61,7 +62,7 @@ export function SideBar(props) {
                  <UI></UI>
             </Tab.Pane>
             <Tab.Pane eventKey="dataPreview">
-                 Data Preview
+                 <DataPreview></DataPreview>
             </Tab.Pane>
             </Tab.Content>
         </Col>

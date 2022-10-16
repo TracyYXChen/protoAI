@@ -27,7 +27,7 @@ export function StateConfig() {
                 <Col xs={2}>
                     <InputGroup className="mb-3">
                         <Form.Control
-                        placeholder="30"
+                        placeholder="50"
                         aria-label="threshold"
                         aria-describedby="thresholdScore"
                         />
