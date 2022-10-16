@@ -4,11 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export function FaceIDCard(props) {
-    function runModel(e) {
-        //todo: add a validation step
-        props.updateRunStatus(true);
-    }
-
     return (
         <Form>
           <Form.Group className="mb-3" controlId="formBasicReg">
@@ -63,7 +58,7 @@ export function FaceIDCard(props) {
 
           <Row>
             <Col xs={6}>
-            <Button variant="outline-primary" onClick={runModel}>
+            <Button variant="outline-primary" onClick={(e) => props.clickRun()}>
                 RUN ALL
             </Button>
             </Col>

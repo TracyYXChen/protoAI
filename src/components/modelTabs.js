@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import { FaceIDCard } from './faceIDcard';
 import styles from './sideBar.module.css';
+import { Transformations } from './transformations';
 
 export function ModelTabs(props) {
 
@@ -26,9 +27,10 @@ export function ModelTabs(props) {
             
                 <Tab.Content>
                 <Tab.Pane eventKey="model">
-                    <FaceIDCard updateRunStatus={props.updateRunStatus} modelRan={props.modelRan}></FaceIDCard>
+                    <FaceIDCard clickRun={props.clickRun} ></FaceIDCard>
                 </Tab.Pane>
                 <Tab.Pane eventKey="transformations">
+                    <Transformations clickAuth={props.clickAuth}></Transformations>
                 </Tab.Pane>
                 <Tab.Pane eventKey="csv">
                 </Tab.Pane>

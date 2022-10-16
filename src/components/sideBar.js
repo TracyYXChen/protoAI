@@ -51,7 +51,7 @@ export function SideBar(props) {
                     <Data modelRan={props.modelRan}></Data>
                     </Col>
                     <Col xs={4}>
-                    <ModelTabs updateRunStatus={props.updateRunStatus} ></ModelTabs>
+                    <ModelTabs clickRun={props.clickRun} clickAuth={props.clickAuth} ></ModelTabs>
                     </Col>
                 </Row>
                 
