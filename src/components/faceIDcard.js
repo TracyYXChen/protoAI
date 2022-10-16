@@ -62,11 +62,6 @@ export function FaceIDCard(props) {
                 RUN ALL
             </Button>
             </Col>
-            <Col xs={6}>
-            <Button variant="outline-primary">
-                RUN SELECTED
-            </Button>
-            </Col>
           </Row>
         </Form>
       );

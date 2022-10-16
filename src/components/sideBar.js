@@ -10,7 +10,8 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import { Model } from './model';
 import { Data } from './data'
-import { ModelTabs } from './modelTabs'
+import { ModelTabs } from './modelTabs';
+import { UI } from './ui'
 
 //const element = <FontAwesomeIcon icon="fa-thin fa-microchip-ai" />
 
@@ -57,7 +58,7 @@ export function SideBar(props) {
                 
             </Tab.Pane>
             <Tab.Pane eventKey="ui">
-                 UI
+                 <UI></UI>
             </Tab.Pane>
             <Tab.Pane eventKey="dataPreview">
                  Data Preview
