@@ -17,7 +17,7 @@ export function Data(props) {
     const scoreCol = [45.5, 71.2, 94.3, 82.0, 32.1, 54.7];
     const outputData = inputData.map((arr, i) => arr.concat([scoreCol[i]]));
 
-    const authHeader = outputHeader.concat(['Authentication']);
+    const authHeader = outputHeader.concat(['predicted']);
     const valCol = ['False', 'True', 'True', 'True', 'False', 'False'];
     const authData = outputData.map((arr, i) => arr.concat([valCol[i]]));
 

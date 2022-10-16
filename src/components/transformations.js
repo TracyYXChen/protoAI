@@ -20,23 +20,23 @@ export function Transformations(props) {
         <Form>
             <Form.Group className="mb-3" controlId="formBasicReg">
             <Row>
-                <Col xs={2}>
+                <Col xs={1}>
                     <Form.Label><b>If</b></Form.Label>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={4}>
                     <Form.Select aria-label="Default select example">
                         <option value="sc">score</option>
                     </Form.Select>
                 </Col>
 
-                <Col xs={3}>
+                <Col xs={5}>
                     <Form.Select aria-label="Default select example">
                         <option value="grt">greater than</option>
                         <option value="les">less than</option>
                     </Form.Select>
                 </Col>
-                <Col>
+                <Col xs={2}>
                     <InputGroup className="mb-3">
                         <Form.Control
                         placeholder="70"
@@ -80,7 +80,7 @@ export function Transformations(props) {
                 <Col xs={5}>
                     <InputGroup className="mb-3">
                         <Form.Control
-                        placeholder="Authentication"
+                        placeholder="predicted"
                         aria-label="threshold"
                         aria-describedby="thresholdScore"
                         />
