@@ -4,7 +4,7 @@ export const AUTH = 'authenticated';
 export const inputHeader = ['FaceID_Reg', 'FaceID_Face', 'GT_Label'];
 export const inputData = [
         ['http://placekitten.com/195/200', 'http://placekitten.com/196/200', 'False'], 
-        ['http://placekitten.com/199/200', 'http://placekitten.com/198/200', 'False'],
+        ['http://placekitten.com/197/200', 'http://placekitten.com/198/200', 'False'],
         ['http://placekitten.com/200/200', 'http://placekitten.com/200/200', 'True'], 
         ['http://placekitten.com/201/200', 'http://placekitten.com/202/200', 'True'],
         ['http://placekitten.com/203/200', 'http://placekitten.com/204/200', 'False'], 
